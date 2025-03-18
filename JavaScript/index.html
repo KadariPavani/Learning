@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Learning</title>
+</head>
+
+<body>
+
+  <script>
+    // Print to the console
+    console.log("Hello world")
+
+    // variables
+    // In Js no need to make type of data --> means we dont need to tell what type of data it is..!
+    // Also called as Loosly typed Language
+
+    let num = 23;
+    let num2 = 21;
+    console.log(num, num2);
+
+    let res = num + num2
+    console.log(res);
+
+    //changing the variable might be happen in future 
+    let a = 10;
+    a = 100;
+    console.log(a);
+    //changing the variable might not be happen in future, we use const variable
+
+    const b = 10;
+    // b=20;
+    console.log(b);
+
+    let name = "Pannu"
+    console.log(name);
+
+    let fname = "Pavani";
+    console.log("The name is " + fname + " and age is " + num); //concatanation
+
+    //String templaing -backtick
+
+    console.log(`The name is ${fname} and the age is ${num}`);
+
+    //Operators : Used to perform operations on data, calculations/comparing/check something correct or not 
+    //Binary operators:-
+    //Arithmetic : +,-,*,/,%
+
+    let n1 = 5;
+    let n2 = 5;
+    let n3 = 6;
+    res = n1 + n2
+    console.log(res);
+
+    //comparision/relational: <,>,<=,>=,==,!= [only one output--> T/F(boolean)]
+
+    console.log(n1 == n2);  // we can only compare type to type not for other type
+
+    //Identity operators [===]
+
+    console.log(n1 === n2);
+
+    //logical operators [&& , ||, !], when we work with multiple comparisions
+
+    console.log((n1 === n2) || (n2 === n3))
+
+    //assignment operators [assign values to variables] +=,-=,*=,/=,%= (Assignement will be work from right to left)
+
+    let ab = 1;
+    ab += 3; //ab=ab+3
+    console.log(ab);
+
+
+    //Unary operators [++,--]
+
+    let abc = 5;
+    abc--;  // abc=abc-1
+    console.log(abc);
+
+    //main example
+
+    let p = 1;
+    let q = p++;
+    console.log(p, q);
+    q = ++p;
+    console.log(p, q);
+
+
+    //conditional statements [if, if-else]
+
+
+    let x = 4;
+
+    if (x === 5) {
+      console.log("Dummy code");
+    }
+    else {
+      console.log("else block");
+
+    }
+    console.log("After if block");
+
+
+    //multiple conditions
+
+    let per = 90;
+    if (per > 80 && per <= 100) {
+      console.log("A grade");
+    }
+    else if (per >= 60 && per < 80) {
+      console.log("B grade");
+    }
+    else if (per >= 40 && per < 60) {
+      console.log("C grade");
+    }
+    else {
+      console.log("FAIL")
+    }
+
+    //switch case [checking for single values again and again we use switch cas ]
+    let status = 2;
+    switch (status) {
+      case 1: {
+        console.log("Active");
+        break;
+      }
+      case 2: {
+        console.log("Inactive");
+        break;
+      }
+      case 3: {
+        console.log("Deleted");
+        break;
+      }
+    }
+
+
+    //loops -->  it is a structure that has ability to execute again and again   [for, while, do-while]
+
+    //while loop
+
+    let numb = 5;
+
+    while (numb <= 10) {
+      console.log(numb);
+      numb++;
+    }
+
+
+    //do while loop
+    let i = 11;
+    do {
+      console.log(i);
+      i++;
+    } while (i <= 10);
+
+
+    //do while loop [in real time we use for password checking, game plays ]
+    let attempts = 3;
+    do {
+      console.log("Checking username and password");
+      attempts--;
+    } while (attempts !== 0);
+
+
+    //for loop
+
+    for (i = 1; i <= 10; i++) {
+      console.log(i * 5, i);
+      i = 90;
+      console.log(i);
+    }
+
+    //functions --> a block of code that has some name, we can use sae set of code again and again
+    // function fun_name(){
+    //   code block
+    // }
+    myfun();
+
+    function myfun() {
+      console.log("Hello1");
+      console.log("Hello2");
+
+      return "me";   //to get the data from inside code to the outside world we use return
+    }
+    let me = myfun();   //calling the function what is returning and store in function, we store in variable
+    console.log(me);
+
+
+    function name_fun(name, age, city = "Kakinada") {
+      console.log(`My name is ${name} and my age is ${age} and my place is ${city}`);
+    }
+
+    name_fun("Pannu", 20, "kkp");
+
+
+    //Arrays [colletion of elements of same type stored in a single variable]
+
+    let arr = [1, 2, 3, 4, 5];
+    console.log(arr);
+
+    let names = ["pannu", "pavani"];
+    console.log(names[0]);
+    // for(let i=0;i<1;i++){
+    for (let i = 0; i < names.length; i++) {
+      console.log(names[i]);
+
+    }
+
+
+    //objects in javascript
+    //object is a collection of related properties which is singnifing an entity..!
+    // Means studenet details like name, age, roll number,..
+
+    let student = {
+      //properties
+      name: "Pavani",
+      rollNumber: "23JN5A4501",
+      branch: "AID"
+    }
+
+    let student2 = {
+      //properties
+      name: "Pannu",
+      rollNumber: "23JN5A4502",
+      branch: "AID"
+    }
+
+    student.planet = "Earth";
+    console.log(student);
+    console.log(student2.name);
+
+    console.log(student.rollNumber);
+    console.log(student['branch'])
+
+
+
+    //example
+
+    let pa = "name";
+    // console.log(student.pa);
+    console.log(student[pa]);
+
+    //if we have to create 20 objects , then we have to write 20 times
+
+    let stu_array = [
+      {
+        name: "Pavani",
+        rollNumber: "23JN5A4501",
+        branch: "AID"
+      },
+      {
+        name: "Pannu",
+        rollNumber: "23JN5A4502",
+        branch: "AID"
+      }
+
+    ]
+
+    console.log(stu_array[0]);
+    console.log(stu_array[0].rollNumber);
+
+    for (i = 0; i < stu_array.length; i++) {
+      console.log(stu_array[i]);
+      console.log(stu_array[i].rollNumber);
+    }
+
+    // console.log(stu_array);
+    let JS = JSON.stringify(stu_array);  //convert JSON.stringfy is to convert JS objects into Json for vice-versa we use JSON.parse..!
+    console.log(JS)
+    console.log(JSON.parse(JS));
+  </script>
+
+
+</body>
+
+</html>
