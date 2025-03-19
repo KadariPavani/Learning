@@ -271,6 +271,35 @@
     let JS = JSON.stringify(stu_array);  //convert JSON.stringfy is to convert JS objects into Json for vice-versa we use JSON.parse..!
     console.log(JS)
     console.log(JSON.parse(JS));
+
+
+
+    let data = [
+      {
+        name: "Pannu",
+        rn: "23JN5A4501",
+        branch: "AID"
+      },
+      {
+        name: "Pavani",
+        rn: "23JN5A4502",
+        branch: "AID2"
+
+      }
+    ]
+
+    console.log(data)
+    for (i = 0; i < data.length; i++) {
+      console.log(data[i].rn);
+
+
+    }
+    let vari = JSON.stringify(data);
+    console.log(vari);
+    console.log(JSON.parse(vari));
+
+
   </script>
 </body>
+
 </html>
