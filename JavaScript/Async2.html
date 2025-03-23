@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    //     console.log("Line1");
+    //     console.log("Line2");
+    // //Js itself is syncrhoous, means execute line by line
+    // //If one particular line of code will be take much time to execute,next code have some time delay , so we getting some bad experience..!
+    // // To make asynchronous, we use settimeout
+
+    // setTimeout(function(){
+    //   console.log("Line3");
+
+    // },0)
+
+    //     console.log("Line4");
+
+
+    console.log("Line1")
+
+    function getUsersFromFacebook(cb) {
+      //take some time, so it will block my actual code
+      //call server
+      //prepare data
+      let users = [{ name: "Pannu" }, { name: "Pavani" }];
+
+      cb(users);
+      // console.log(users)
+      // return users
+    }
+
+    console.log("Line2")
+
+
+
+    console.log("Another some code line3");
+
+    //what if more asyncronous tasks like along with the users we have user related posts, in that moment
+    // After calling the getUsersfrom facebook, we need to call the users posts..!
+    // whatif the get usrs from facebook takes more time and posts less time, so we can make sue that after done with the process of the getusers from facebook, we can make the posts woukd be done..! So we can make dependent of each other..!
+    function getPostsForUsers(user, cb) {
+      //call the api
+      //pass the user for getting posts
+
+
+      let posts = [{ title: "Holiday" }, { title: "Good days spent" }]
+      cb(posts);
+    }
+
+
+    setTimeout(function () {
+      getUsersFromFacebook(function (users) {
+
+      })
+      // let users = getUsersFromFacebook();
+      setTimeout(function () {
+        getPostsForUsers(users[0], function (posts) {
+          //getting the comments and replies all..!
+        });
+        // let posts = getPostsForUsers(users[1]);
+      }, 0)
+
+
+    }, 0)
+
+
+    //till 2015, we use call back functions to handle data from asynchronous functions
+    //It is complex and it is callback hell
+
+    //So promises are introduced to handle better way of asynchronous tasks / handling relateed to callbacks 
+
+
+
+
+  </script>
+
+</body>
+
+</html>
