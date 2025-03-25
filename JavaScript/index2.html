@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function getUsersFromFacebook(successcb,failcb){
+      //call server
+      //prepare data
+      let users =[{name:"Pannu"},{name:"Pavani"}];
+
+      if(users >0){
+        successcb(users);
+
+
+      }
+      else{
+        failcb("No users found");
+      }
+
+    }
+
+
+    function getPostsForUsers(user, sb, fb){
+      //call the api
+      //pass the user for getting posts
+      let posts = [{title:"Holiday"},{title:"Good days spent"}]
+if(posts.length >0){
+  sb(posts);      
+    }
+    else{
+      fb("No posts found");
+    }
+  }
+
+    setTimeout(function(){
+      getUsersFromFacebook(function(users){
+        console.log(users);
+        setTimeout(function(){
+          getPostsForUsers(users[0],function(posts){
+            console.log(posts);
+          },function(err){
+            console.log(err);
+          })
+        })
+      },function(err){
+        console.log(err);
+      })
+    },2000)
+    
+
+
+
+  </script>
+</body>
+</html>
