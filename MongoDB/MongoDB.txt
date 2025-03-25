@@ -1,0 +1,59 @@
+MONGODB
+• It is a Database Management System.
+• Our job is to create Applications (web/mobile).  
+
+• Frontend does not directly communicate with the database; there is something in between that helps → APIs.  
+• These APIs communicate with the database to retrieve data. The database returns the data to the API (formatted, structured, and useful data), which is then sent to the frontend.  
+
+Process:  
+Frontend requests data from API → API processes the request and queries the database → Database responds to the API → API sends the response to the frontend.  
+
+DATABASE:  
+A database is a place where data is stored and managed. Whenever the application needs data, it requests the database, which then delivers the required data.  
+
+Examples: emails, products, etc.  
+The data can be anything (notepad files, Excel sheets, etc.).  
+
+Popular database companies:  
+• Microsoft SQL Server  
+• Oracle SQL Server  
+
+Open-source databases (also available with free domain and hosting servers):  
+• MySQL  
+• PostgreSQL  
+
+Databases can be installed on a PC or used in paid cloud-based versions for real-time applications.  
+
+Every database system works differently, but the main goal is to store and manage data efficiently.  
+
+Examples:  
+• Notepad and Excel store data, but databases offer much more functionality.  
+• Databases can be connected in real-time using APIs.  
+
+Some databases store data in different formats:  
+• Table-based  
+• Object-based  
+• Graph-based  
+• Key-value format  
+
+Storing data in a database is not enough; we also need to interact with it (store, update, delete, fetch, view).  
+To do this, we use commands:  
+• SQL commands (for Microsoft SQL, Oracle, MySQL) through a terminal  
+• API-based connections (Java, JavaScript, Python)  
+• User-friendly software interfaces for layman users  
+
+Databases can be installed locally on a PC or accessed via cloud-based services.  
+
+MONGODB  
+• Stores data in a document-based format.  
+
+Example:  
+{
+    "name": "My Name",
+    "age": 1
+}
+
+Key terms:  
+• Database Management System → A complete software that holds multiple databases.  
+• Database → A place where similar types of data are stored, usually categorized based on projects.  
+• SQL-based databases store data in tables (e.g., users, admins, products).  

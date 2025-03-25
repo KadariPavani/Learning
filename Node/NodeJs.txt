@@ -1,0 +1,33 @@
+Node Js --> Multipurpose programming language 
+Used for , 
+DOM manipulation
+API, Game development, ML and Robotics
+
+JS only works inside the browser, we can't run outside of the browser
+Do only for HTML and CSS and DOM manipulation
+
+2009 -ryan dahl created Node JS -JS Runtime (Its a piece of S/w), so we can run in outside
+As like  node js --> Deno, Bun (latest)
+ 
+So we can use outside 
+
+----------------------------------------
+
+Inside the browser also we have engine that is V8 engine is used to run JavaScript, nodejs also use the same engine, so there are much more powers like 
+1. Access OS 
+2. Access Files
+3. Access Network
+
+npmjs --> main js library
+
+
+----------------------------------------------
+
+Download steps
+ search nodejs --> nodejs.org/download --> download (lts) --> msi64bit(based on pc) --> Install --> Done 
+
+
+ To check installed/not 
+ node -v
+
+ // We can't do DOM manipulation until and unless we have html file. 
