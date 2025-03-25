@@ -230,6 +230,10 @@ let news= studs.find((n)=>{
 })
 console.log(news);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 //==========destructuring==================
 // It helps to copy the data in a really efficient manner..!
 //Even if there are manyh properties, we can extract whatever we want..!
