@@ -133,3 +133,44 @@ console.log(os.platform());
 console.log(os.hostname());
 console.log(os.freemem());
 console.log(os.homedir());
+
+
+
+------------------------------DAY-2----------------------------
+
+API --> Application Programming Interface
+A server is a computer or a software which is running continuously ad its job is to provides service, means if someone is asking, that program can run and make action..!
+For frontend , API and for database we use 3 different servers 
+If we have to use all three in a single server, we can get conflicts, as we work with different url's port numbers , we use different servers.
+client --> sending request --> server
+server --> giving response --> client
+These are communicaate only on internet, 
+To communicate mainly the need is ADDRESS, that's y every device has unique address that is "IP Address"
+
+Components of a REQUEST 
+
+1. Address / Base/ IP Address : The client doesn't make the request when the client doesn't know that IP Address.
+2. Route : After reaching the server --> multiple functionalities (API's) --> which functionlity to call 
+3. Method : To create, update,delete, view the data. (CRUD) operations..!  WE have to mention in the request
+   I .  GET --> Fetch data
+   II.  POST  --> Creating a new data like account
+   III. PUT --> Updating the data 
+   IV . PATCH --> Same like PUT
+   V .  DELETE --> To delete data 
+4. Data : client --> API --> database
+5. Headers : TO send extra info from client to the server --> come from, client name, size, length, of the data 
+
+
+Components of a RESPONSE 
+
+1. Data : Server --> API --> client
+2. Headers : TO send extra info from server to the client.
+3. Status code : Number codes
+   I. 200 -OK
+   II. 404 -ERROR
+
+The combination of base address and the routes called as URL "UNIFROM RESOURCE LOCATOR" Locating anything on the internet webpage, file or it can be a API function
+Ex: 127.0.0.1/delete
+127.0.0.1/delete?id=1 #Url param/query param and value is 1,then it delete the id that is related to 1 
+Sending the data through urls can be more beneficial..!
+
