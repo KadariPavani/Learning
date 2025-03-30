@@ -1,0 +1,50 @@
+[{
+  "id":1,
+  "name":"Pavani",
+  "branch":"AID",
+  "college" :"KIEW"
+},
+{
+  "id":2,
+  "name":"Junnu",
+  "branch":"AID",
+  "college" :"KIET"
+},
+{
+  "id":3,
+  "name":"Bangaram",
+  "branch":"AIM",
+  "college" :"BVC"
+},
+{
+  "id":4,
+  "name":"Jagan",
+  "branch":"CSM",
+  "college" :"AVANTHI"
+},
+{
+  "id":5,
+  "name":"Chinnu",
+  "branch":"IT",
+  "college" :"PRAGATHI"
+},
+{
+  "id":6,
+  "name":"Kesava",
+  "branch":"AID",
+  "college" :"KIET"
+},
+{
+  "id":7,
+  "name":"Santhosh",
+  "branch":"IOT",
+  "college" :"ADITYA"
+},
+{
+  "id":8,
+  "name":"Sathvi",
+  "branch":"CAI",
+  "college" :"KIET"
+}
+
+]
